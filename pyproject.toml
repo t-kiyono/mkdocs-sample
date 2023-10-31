@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mkdocs-sample"
+version = "0.1.0"
+description = ""
+authors = ["t-kiyono <t-kiyono@be-geek.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^9.4.7"
+mkdocs-with-pdf = "^0.9.3"
+plantuml-markdown = "^3.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
