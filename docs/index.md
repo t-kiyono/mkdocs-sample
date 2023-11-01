@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
@@ -23,3 +28,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 Bob -> Alice : hello
 @enduml
 ```
+
+## 日本語のテスト
+
+あいうえお
+
+かきくけこ

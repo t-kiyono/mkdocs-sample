@@ -1,11 +1,63 @@
+# Project information
 site_name: My Docs
+site_url: https://t-kiyono.github.io/mkdocs-sample/
+site_author: Takayuki Kiyono
+site_description: >-
+  This documentation is the MkDocs sample
+
+# Repository
+repo_name: t-kiyono/mkdocs-sample
+repo_url: https://github.com/t-kiyono/mkdocs-sample
+
+# Copyright
+copyright: Copyright &copy; 2023 Takayuki Kiyono
+
+# Configuration
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - search.suggest
+  palette: 
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
 plugins:
+  - search:
+      enabled: true
   - with-pdf:
       cover: true
-      cover_title: My Docs
+      enabled_if_env: ENABLE_PDF_EXPORT
+      custom_template_path: custom_template
+      cover_subtitle: Sub Title
+      debug_html: false
+
 markdown_extensions:
   - plantuml_markdown:
       server: !ENV [PLANTUML_URL, 'http://localhost:5555']
       format: svg
+
+nav:
+  - index.md
+  - Test:
+    - test/index.md
+    - A: test/a.md
+    - B: test/b.md
+  - about.md

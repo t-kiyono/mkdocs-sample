@@ -1,0 +1,11 @@
+$mainColor: #177e7e;
+$subColor: rgba($mainColor, 0.85);
+
+article h1 {
+  border-bottom: 2px solid $mainColor }
+
+article h2 {
+  border-bottom: 1px solid $subColor }
+
+article h3 {
+  border-bottom: 0.5px solid #eee; }
