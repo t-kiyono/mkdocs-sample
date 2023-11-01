@@ -7,5 +7,5 @@ plugins:
       cover_title: My Docs
 markdown_extensions:
   - plantuml_markdown:
-      server: http://localhost:5555
+      server: !ENV [PLANTUML_URL, 'http://localhost:5555']
       format: svg
