@@ -7,6 +7,8 @@ hide:
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
+**aaaaaaa**
+
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.
@@ -33,4 +35,40 @@ Bob -> Alice : hello
 
 あいうえお
 
-かきくけこ
+**かきくけこ**
+
+## tab
+
+=== "C"
+
+    ``` c
+    #include <stdio.h>
+
+    int main(void) {
+      printf("Hello world!\n");
+      return 0;
+    }
+    ```
+
+=== "C++"
+
+    ``` c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
+## Admonition
+
+!!! note
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+
+!!! Bug
+
+    BABEL BABEL BABEL

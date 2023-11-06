@@ -15,11 +15,15 @@ copyright: Copyright &copy; 2023 Takayuki Kiyono
 # Configuration
 theme:
   name: material
+  font:
+    text: Noto Serif JP
+    code: Roboto Mono
   features:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
     - search.suggest
+    - content.tabs.link
   palette: 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -53,11 +57,18 @@ markdown_extensions:
   - plantuml_markdown:
       server: !ENV [PLANTUML_URL, 'http://localhost:5555']
       format: svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 nav:
-  - index.md
+  - Home:
+    - Welcome to MkDocs: index.md
+    - About: about.md
   - Test:
     - test/index.md
     - A: test/a.md
     - B: test/b.md
-  - about.md
